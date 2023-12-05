@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         textResultado=findViewById(R.id.textResultado);
         editQuantidadeEuro=findViewById(R.id.editQuantidadeEuro);
         editCotacaoEuro=findViewById(R.id.editCotacaoEuro);
-        textResultadoEuro=findViewById(R.id.editQuantidadeEuro);
+        textResultadoEuro=findViewById(R.id.textResultadoEuro);
 
 
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         double quantidadeDolar = Double.parseDouble(editQuantidadeDolar.getText().toString());
         double cotacaoDolar = Double.parseDouble(editTextCotacaoDolar.getText().toString());
         double resultado= quantidadeDolar*cotacaoDolar;
-        textResultadoEuro.setText("Valor convertido em R$: "+resultado);
+        textResultado.setText("Valor convertido em R$: "+resultado);
 
     }
 
